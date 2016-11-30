@@ -6,9 +6,9 @@ RUN apt-get update \
     libmysqlclient-dev \
   && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ENV APP_HOME /asq
+ENV APP_HOME /home/asq/
 
-RUN mkdir $APP_HOME /bundle-cache
+RUN mkdir $APP_HOME
 
 WORKDIR $APP_HOME
 
